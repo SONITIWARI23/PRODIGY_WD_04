@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soni Tiwari | Web Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  position:fixed;
+  width:100%;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav h1{
+  font-size:22px;
+  font-weight:600;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+nav ul li a{
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#00f5a0;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}
+
+.hero img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #00f5a0;
+  margin-bottom:20px;
+}
+
+.hero h2{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.hero span{
+  color:#00f5a0;
+}
+
+.hero p{
+  max-width:600px;
+  margin-bottom:25px;
+}
+
+.btn{
+  padding:12px 25px;
+  border-radius:25px;
+  background:#00f5a0;
+  color:#000;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#fff;
+}
+
+/* SECTIONS */
+section{
+  padding:100px 8%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:40px;
+}
+
+/* ABOUT */
+.about{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+}
+
+/* SKILLS */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.skill{
+  background:rgba(255,255,255,0.1);
+  padding:12px 20px;
+  border-radius:20px;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.project-card{
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+  background:rgba(255,255,255,0.2);
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:15px;
+  background:rgba(0,0,0,0.4);
+}
+
+@media(max-width:768px){
+  .hero h2{
+    font-size:28px;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h1>Soni Tiwari</h1>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <img src="your-photo.jpg" alt="Soni Tiwari">
+  <h2>Hello, I'm <span>Soni Tiwari</span></h2>
+  <p>A passionate Web Developer skilled in building responsive websites and database-driven applications. I love creating clean and efficient digital solutions.</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about">
+    <p>
+      I am a BCA graduate from Raisoni College with strong interest in web development and database systems.
+      I have hands-on experience in HTML, CSS, Java, SQL, DBMS, RDBMS, and R programming.
+      I enjoy solving real-world problems through coding and continuously learning new technologies.
+    </p>
+    <br>
+    <p><strong>Education:</strong> BCA – Raisoni College</p>
+    <p><strong>Career Goal:</strong> To work as a professional web developer and contribute to innovative projects.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Java</div>
+    <div class="skill">SQL</div>
+    <div class="skill">DBMS</div>
+    <div class="skill">RDBMS</div>
+    <div class="skill">R Programming</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>Chatbot Application</h3>
+      <p>A chatbot developed to simulate intelligent conversations and assist users with queries.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact">
+    <p>GitHub: Add your GitHub link here</p>
+    <p>LinkedIn: Add your LinkedIn link here</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Soni Tiwari | All Rights Reserved
+</footer>
+
+</body>
+</html>
